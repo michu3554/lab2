@@ -3,49 +3,20 @@
 # (dodane pozycje mają zostać dodane od 5 indeksu, cała lista mam zawierać
 # 10 pozycji)
 
-# ulubione_filmy = ["Skazani na Shawshank","Nietykalni","Zielona mila","Ojciec Chrzestny","Forrest Gump","Pulp fiction"]
-# print(ulubione_filmy)
-# ulubione_filmy.reverse()
-# print(ulubione_filmy)
-# ulubione_filmy.insert(5,"Joker")
-# ulubione_filmy.insert(6,"Pianista")
-# ulubione_filmy.insert(7,"Incepcja")
-# ulubione_filmy.insert(8,"Milczenie owiec")
-# print(ulubione_filmy)
+ulubione_filmy = ["Skazani na Shawshank" "Nietykalni" "Zielona mila" "Ojciec Chrzestny" "Forrest Gump" "Pulp fiction"]
+print(ulubione_filmy)
+ulubione_filmy.reverse()
+print(ulubione_filmy)
+ulubione_filmy.insert(5, "Joker")
+ulubione_filmy.insert(6, "Pianista")
+ulubione_filmy.insert(7, "Incepcja")
+ulubione_filmy.insert(8, "Milczenie owiec")
+print(ulubione_filmy)
 
 # Zad 2. Stwórz skrypt, w którym utworzysz słownik z filmami z zadania 1. Pomyśl co może być kluczem
 
-# slownik = {
-#     "1": "Skazani na Shawshank",
-#     "2": "Nietykalni",
-#     "3": "Zielona mila",
-#     "4": "Ojciec Chrzestny",
-#     "5": "Forrest Gump",
-#     "6": "Pulp fiction",
-#     "7": "Joker",
-#     "8": "Pianista",
-#     "9": "Incepcja",
-#     "10": "Milczenie owiec"
-# }
-# print(slownik)
+slownik_filmow = {'tytul': ulubione_filmy}
 
-# Zad 3. Stwórz skrypt, gdzie utworzysz słownik z nazwami przedmiotów z obecnego semestru oraz ich skrótami.
-# Policz liczbę elementów w słownik
+slownik_filmow.items()
 
-# przedmioty = {
-#     "CAD komputerowe wspomaganie programowania": "CAD",
-#     "Wizualizacja danych": "WD",
-#     "Przedmiot humanizujący": "PH",
-#     "Język angielski": "JA",
-#     "Rachunek różniczkowy i całkowy": "RRIC",
-#     "Elementy matematyki dyskretnej": "EMD",
-#     "Programowanie strukturalne": "PS"
-# }
-# print(przedmioty)
-# print(len(przedmioty))
-
-# Zad 4. Napisz skrypt gdzie wczytasz liczbę dowolnego typu i podnieś ją do tej samej potęgi. Użyj funkcji input.
-
-liczba = input("Podaj dowolną liczbe: ")
-liczba = float(liczba)
-print(liczba * liczba)
+print(slownik_filmow)
