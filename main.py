@@ -105,11 +105,20 @@
 # O    O
 # OOOOOO
 
-lista = [1, 2, 3, 4, 5, 6]
+# lista = [1, 2, 3, 4, 5, 6]
+#
+# i = 1
+# for i in range(6):
+#     if lista[i] % 5 == 1:
+#         print("000000")
+#     if lista[i] % 5 != 1:
+#         print("0    0")
 
-i = 1
-for i in range(6):
-    if lista[i] % 5 == 1:
-        print("000000")
-    if lista[i] % 5 != 1:
-        print("0    0")
+# Zad 10. Napisz skrypt, w którym użytkownik ma podać liczbę i
+# który będzie wyłapywał błąd gdy użytkownik poda literę zamiast cyfry.
+
+a = input("Podaj liczbę: ")
+try:
+    float(a)/float(a)
+except ValueError:
+    print("blad")
