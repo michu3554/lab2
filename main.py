@@ -74,9 +74,24 @@
 # się z liczb typu int i float. Następnie za pomocą pętli for
 # oblicz sumę elementu obecnego z poprzednim.
 
-lista = [1, 2, 3, 4, 1.1, 1.2, 1.3, 1.4]
+# lista = [1, 2, 3, 4, 1.1, 1.2, 1.3, 1.4]
+#
+# i = 0
+# for i in range(len(lista)-1):
+#     suma = lista[i] + lista[i+1]
+#     print(suma)
 
+# Zad 8. Napisz skrypt, który
+# za pomocą pętli while pobiera 10 liczb,
+# a następnie dodaje do listy tylko liczby całkowite
+
+lista1 = []
+lista2 = []
 i = 0
-for i in range(len(lista)-1):
-    suma = lista[i] + lista[i+1]
-    print(suma)
+while i < 10:
+    lista2.append(input("Podaj " + str(i+1) + " liczbe:"))
+    i += 1
+for i in range(0, len(lista2), 1):
+    if int(float(lista2[i])) == float(lista2[i]):
+        lista1.append(int(float(lista2[i])))
+print(lista1)
