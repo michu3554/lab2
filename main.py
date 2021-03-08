@@ -54,18 +54,29 @@
 # Zad 6. Wczytaj trzy liczby całkowite a,b,c
 # i sprawdź czy liczba a jest parzysta oraz czy jednocześnie b>c
 
-print("Wczytaj trzy liczby całkowite a,b,c: \n")
+# print("Wczytaj trzy liczby całkowite a,b,c: \n")
+#
+# a = input("a = ")
+# a = int(a)
+#
+# b = input("b = ")
+# b = int(b)
+#
+# c = input("c = ")
+# c = int(c)
+#
+# if a % 2 == 0 and b > c:
+#     print("prawda")
+# else:
+#     print("falsz")
 
-a = input("a = ")
-a = int(a)
+# Zad 7. Napisz skrypt, gdzie stworzysz listę składającą
+# się z liczb typu int i float. Następnie za pomocą pętli for
+# oblicz sumę elementu obecnego z poprzednim.
 
-b = input("b = ")
-b = int(b)
+lista = [1, 2, 3, 4, 1.1, 1.2, 1.3, 1.4]
 
-c = input("c = ")
-c = int(c)
-
-if a % 2 == 0 and b > c:
-    print("prawda")
-else:
-    print("falsz")
+i = 0
+for i in range(len(lista)-1):
+    suma = lista[i] + lista[i+1]
+    print(suma)
