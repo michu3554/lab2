@@ -85,13 +85,31 @@
 # za pomocą pętli while pobiera 10 liczb,
 # a następnie dodaje do listy tylko liczby całkowite
 
-lista1 = []
-lista2 = []
-i = 0
-while i < 10:
-    lista2.append(input("Podaj " + str(i+1) + " liczbe:"))
-    i += 1
-for i in range(0, len(lista2), 1):
-    if int(float(lista2[i])) == float(lista2[i]):
-        lista1.append(int(float(lista2[i])))
-print(lista1)
+# lista1 = []
+# lista2 = []
+# i = 0
+# while i < 10:
+#     lista2.append(input("Podaj " + str(i+1) + " liczbe:"))
+#     i += 1
+# for i in range(0, len(lista2), 1):
+#     if int(float(lista2[i])) == float(lista2[i]):
+#         lista1.append(int(float(lista2[i])))
+# print(lista1)
+
+# Zad 9. Napisz skrypt, który rysuje następującą literę
+#
+# OOOOOO
+# O    O
+# O    O
+# O    O
+# O    O
+# OOOOOO
+
+lista = [1, 2, 3, 4, 5, 6]
+
+i = 1
+for i in range(6):
+    if lista[i] % 5 == 1:
+        print("000000")
+    if lista[i] % 5 != 1:
+        print("0    0")
