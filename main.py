@@ -32,14 +32,20 @@
 # Zad 3. Stwórz skrypt, gdzie utworzysz słownik z nazwami przedmiotów z obecnego semestru oraz ich skrótami.
 # Policz liczbę elementów w słownik
 
-przedmioty = {
-    "CAD komputerowe wspomaganie programowania": "CAD",
-    "Wizualizacja danych": "WD",
-    "Przedmiot humanizujący": "PH",
-    "Język angielski": "JA",
-    "Rachunek różniczkowy i całkowy": "RRIC",
-    "Elementy matematyki dyskretnej": "EMD",
-    "Programowanie strukturalne": "PS"
-}
-print(przedmioty)
-print(len(przedmioty))
+# przedmioty = {
+#     "CAD komputerowe wspomaganie programowania": "CAD",
+#     "Wizualizacja danych": "WD",
+#     "Przedmiot humanizujący": "PH",
+#     "Język angielski": "JA",
+#     "Rachunek różniczkowy i całkowy": "RRIC",
+#     "Elementy matematyki dyskretnej": "EMD",
+#     "Programowanie strukturalne": "PS"
+# }
+# print(przedmioty)
+# print(len(przedmioty))
+
+# Zad 4. Napisz skrypt gdzie wczytasz liczbę dowolnego typu i podnieś ją do tej samej potęgi. Użyj funkcji input.
+
+liczba = input("Podaj dowolną liczbe: ")
+liczba = float(liczba)
+print(liczba * liczba)
